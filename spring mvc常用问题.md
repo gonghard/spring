@@ -56,3 +56,11 @@
 				</bean>
 			</mvc:interceptor>
 		</mvc:interceptors>
+		
+4. spring mvc4.2 以下解决跨域问题 
+          可以添加一个拦截器对指定请求设置
+
+                response.setHeader("Access-Control-Allow-Origin", "*");
+                response.setHeader("Access-Control-Allow-Methods", "POST");
+                response.setHeader("Access-Control-Allow-Headers", "Access-Control");
+                response.setHeader("Allow", "POST");
