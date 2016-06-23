@@ -57,7 +57,7 @@
 			</mvc:interceptor>
 		</mvc:interceptors>
 		
-4. spring mvc4.2 以下解决跨域问题 
+4. spring mvc4.2 以下解决js跨域问题 
           可以添加一个拦截器对指定请求设置
 
                 response.setHeader("Access-Control-Allow-Origin", "*");
